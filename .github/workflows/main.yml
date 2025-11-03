@@ -56,5 +56,5 @@ jobs:
       - name: Deploy to EKS
         run: |
           kubectl set image deployment/online-ide-deployment \
-          online-ide-container=${{ secrets.DOCKERHUB_USERNAME }}/myapp:${{ env.IMAGE_TAG }}
+          online-ide=${{ secrets.DOCKERHUB_USERNAME }}/myapp:${{ env.IMAGE_TAG }}
           kubectl rollout status deployment/online-ide-deployment
