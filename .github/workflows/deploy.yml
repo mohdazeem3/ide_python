@@ -5,7 +5,7 @@ on:
 
 env:
   AWS_REGION: us-east-1
-  EKS_CLUSTER: ide-cluster-1
+  EKS_CLUSTER: dev-cluster
   DEPLOYMENT_NAME: online-ide-deployment
   K8S_MANIFEST: deployment.yaml
 
